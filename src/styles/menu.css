@@ -1,0 +1,107 @@
+/* nav */
+nav {
+    padding: 1rem;
+    display: flex;
+    background-color: transparent;
+}
+
+ul {
+    list-style: none;
+}
+
+.landscape-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100vw;
+    gap: 2rem;
+}
+
+.landscape-menu-section {
+    width: 33vw;
+    font-size: 24px;
+    display: flex;
+    gap: 4em;
+    justify-content: center;
+}
+
+.off-screen-menu {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 1080px) {
+    .landscape-menu {
+        display: none;
+    }
+
+    /* off-screen-menu */
+    .off-screen-menu {
+        background-color:  black;
+        height: 100vh;
+        width: 100%;
+        max-width: 450px;
+        position: fixed;
+        top: 0;
+        right: -450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+        justify-content: center;
+        text-align: center;
+        font-size: 3rem;
+        transition: .3s ease;
+        z-index: 1;
+    }
+    .off-screen-menu.active {
+        right: 0;
+    }
+    .off-screen-menu-list > li {
+        margin-top: 1rem;
+    }
+
+    /* ham menu */
+    .ham-menu {
+        height: 50px;
+        width: 40px;
+        margin-left: auto;
+        position: relative;
+    }
+    .ham-menu span {
+        height: 5px;
+        width: 100%;
+        background-color: white;
+        border-radius: 25px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: .3s ease;
+        z-index: 1;
+    }
+    .ham-menu span:nth-child(1) {
+        top: 25%;
+    }
+    .ham-menu span:nth-child(3) {
+        top: 75%;
+    }
+    .ham-menu.active span {
+        background-color: white;
+    }
+    .ham-menu.active span:nth-child(1) {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+    .ham-menu.active span:nth-child(2) {
+        opacity: 0;
+    }
+    .ham-menu.active span:nth-child(3) {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+}

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laminar Pay About</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/menu.css">
+  <link rel="stylesheet" href="./styles/contact.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav class="landscape-menu">
+      <div class="landscape-menu-section">
+        <a href="./index.html">Laminar</a>
+        <a href="./login.html">Login</a>
+      </div>
+      <div class="landscape-menu-section"></div>
+      <div class="landscape-menu-section">
+        <a href="./about-us.html">About Us</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </nav>
+    <div class="off-screen-menu">
+      <ul class="off-screen-menu-list">
+        <li><a href="./index.html">Laminar</a></li>
+        <li><a href="./login.html">Login</a></li>
+        <li><a href="./about-us.html">About Us</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <nav>
+      <div class="ham-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    <main class="page-body">
+      <form id="contact-form" class="contact-form">
+        <label for="name">Name</label>
+        <input id="name" class="contact-input" type="text">
+        <label for="email">Email</label>
+        <input id="name" class="contact-input" type="text">
+        <label for="phone">Phone</label>
+        <input id="phone" class="contact-input" type="text">
+        <label for="subject">Subject</label>
+        <input id="subject" class="contact-input" type="text">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" class="contact-input-textarea" rows="5" cols="44"></textarea>
+        <button class="contact-button" type="submit">Send</button><!--  -->
+      </form>
+    </main>
+    <footer class="page-footer">
+      <a href="https://linkedin.com" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./scripts/contactForm.js"></script>
+  <script src="./scripts/hamburgerMenu.js"></script>
+</body>
+
+</html>

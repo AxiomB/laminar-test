@@ -1,0 +1,61 @@
+@font-face {
+  font-family: dm-sans;
+  src: url('../assets/fonts/DMSans-VariableFont_opsz\,wght.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: dm-sans-italic;
+  src: url('../assets/fonts/DMSans-Italic-VariableFont_opsz\,wght.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background: url('./../assets/images/background-laminar.webp') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  color-scheme: light dark;
+  color: white;
+  font-family: dm-sans;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header,
+.page-footer {
+  background-color: transparent;
+  color: white;
+
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding: 0.5rem;
+}
+
+.page-body {
+  flex-grow: 1;
+}

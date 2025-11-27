@@ -1,0 +1,60 @@
+.contact-form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-input {
+    height: 2.5rem;
+    width: 30rem;
+    border: 2em grey;
+    opacity: .7;
+}
+
+.contact-input-textarea {
+    width: 30rem;
+    border: 2em grey;
+    opacity: .7;
+}
+
+.contact-button {
+    border-radius: 2em;
+    border: 2rem grey;
+    margin-top: 2.5rem;
+    height: 2.5rem;
+    width: 30rem;
+}
+
+.page-body {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1080px) {
+    .contact-input {
+        height: 2.5rem;
+        width: 20rem;
+        border: 2em grey;
+        opacity: .7;
+    }
+
+    .contact-input-textarea {
+        width: 20rem;
+        border: 2em grey;
+        opacity: .7;
+    }
+
+    .contact-button {
+        border-radius: 2em;
+        border: 2rem grey;
+        margin-top: 2.5rem;
+        height: 2.5rem;
+        width: 20rem;
+    }
+}
