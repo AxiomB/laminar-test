@@ -9,23 +9,13 @@
 }
 
 .logo-image-container {
-  height: 3rem;
-  width: 16rem;
+  height: 3.4rem;
+  width: 18.12rem;
 }
 
 .logo-center-image {
   width: 100%;
   height: 100%;
-}
-
-.copyright-container {
-  margin-top: 1rem;
-  width: 10rem;
-}
-
-.copyright-label {
-  font-size: 1rem;
-  padding-left: 1rem;
 }
 
 img {

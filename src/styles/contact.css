@@ -1,3 +1,11 @@
+.page-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .contact-form {
     height: 100%;
     width: 100%;
@@ -5,38 +13,45 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
+    gap: 2rem;
+}
+
+.contact-title {
+    width: 28rem;
 }
 
 .contact-input {
+    background-color: white;
+    color: black;
     height: 2.5rem;
     width: 30rem;
     border: 2em grey;
-    opacity: .7;
 }
 
 .contact-input-textarea {
+    background-color: white;
+    color: black;
     width: 30rem;
     border: 2em grey;
-    opacity: .7;
+}
+
+.contact-button-container {
+    height: 2.2rem;
+    width: 30rem;
+    display: flex;
+    justify-content: right;
 }
 
 .contact-button {
-    border-radius: 2em;
-    border: 2rem grey;
-    margin-top: 2.5rem;
-    height: 2.5rem;
-    width: 30rem;
-}
-
-.page-body {
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 10rem;
 }
 
 @media only screen and (max-width: 1080px) {
+    .contact-form {
+        height: 60vh;
+        overflow: hidden;
+    }
+
     .contact-input {
         height: 2.5rem;
         width: 20rem;
@@ -50,10 +65,18 @@
         opacity: .7;
     }
 
+    .contact-title {
+        width: 100vw;
+        text-align: center;
+    }
+
+    .contact-button-container {
+        justify-content: center;
+    }
+
     .contact-button {
         border-radius: 2em;
         border: 2rem grey;
-        margin-top: 2.5rem;
         height: 2.5rem;
         width: 20rem;
     }

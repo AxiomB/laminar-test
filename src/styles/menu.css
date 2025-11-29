@@ -14,15 +14,33 @@ ul {
     flex-direction: row;
     justify-content: space-evenly;
     width: 100vw;
-    gap: 2rem;
 }
 
-.landscape-menu-section {
-    width: 33vw;
-    font-size: 24px;
+.landscape-menu-section-right {
+    width: 24vw;
+    font-size: 20px;
     display: flex;
-    gap: 4em;
-    justify-content: center;
+    gap: 3em;
+    justify-content: left;
+    padding-top: 2rem;
+}
+
+.landscape-menu-section-left {
+    width: 20vw;
+    font-size: 20px;
+    display: flex;
+    gap: 5em;
+    justify-content: left;
+    padding-top: 2rem;
+}
+
+.hidden-icon-link {
+    min-width: 20px;
+    visibility: hidden;
+}
+
+.selected-link {
+    text-decoration: underline;
 }
 
 .off-screen-menu {
@@ -42,7 +60,7 @@ a {
 
     /* off-screen-menu */
     .off-screen-menu {
-        background-color:  black;
+        background-color: black;
         height: 100vh;
         width: 100%;
         max-width: 450px;
@@ -51,27 +69,41 @@ a {
         right: -450px;
         display: flex;
         flex-direction: column;
-        align-items: center;    
+        align-items: center;
         justify-content: center;
         text-align: center;
         font-size: 3rem;
         transition: .3s ease;
         z-index: 1;
     }
+
     .off-screen-menu.active {
         right: 0;
     }
-    .off-screen-menu-list > li {
+
+    .off-screen-menu-item {
         margin-top: 1rem;
+    }
+
+    .off-screen-menu-icon {
+        margin-top: 3rem;
     }
 
     /* ham menu */
     .ham-menu {
-        height: 50px;
-        width: 40px;
+        height: 25px;
+        width: 20px;
         margin-left: auto;
         position: relative;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 0;
+        flex-shrink: 0;
+        padding: 3rem;
     }
+
     .ham-menu span {
         height: 5px;
         width: 100%;
@@ -84,22 +116,28 @@ a {
         transition: .3s ease;
         z-index: 1;
     }
+
     .ham-menu span:nth-child(1) {
         top: 25%;
     }
+
     .ham-menu span:nth-child(3) {
         top: 75%;
     }
+
     .ham-menu.active span {
         background-color: white;
     }
+
     .ham-menu.active span:nth-child(1) {
         top: 50%;
         transform: translate(-50%, -50%) rotate(45deg);
     }
+
     .ham-menu.active span:nth-child(2) {
         opacity: 0;
     }
+
     .ham-menu.active span:nth-child(3) {
         top: 50%;
         transform: translate(-50%, -50%) rotate(-45deg);
